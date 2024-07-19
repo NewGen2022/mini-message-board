@@ -1,12 +1,16 @@
 import colors from 'colors';
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import messages from './routes/messages.js';
 
 const PORT = process.env.PORT || 8000;
 const MONGO_CONN = process.env.MONGO_URL;
 
 const app = express();
+
+// Enable CORS for all origins
+app.use(cors({ origin: 'http://localhost:8877' }));
 
 // Body parser middleware
 app.use(express.json()); // to handle submit raw json
