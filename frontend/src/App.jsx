@@ -1,8 +1,15 @@
-import './App.css';
-import { useState, useEffect } from 'react';
+import './styles/App.css';
+import { Route, Routes } from 'react-router-dom';
+import MessageBoard from './pages/MessageBoard';
+import NewMessage from './pages/NewMessage';
 
 function App() {
-    return <></>;
+    return (
+        <Routes>
+            <Route path="/" element={<MessageBoard />} />
+            <Route path="/new" element={<NewMessage />} />
+        </Routes>
+    );
 }
 
 export default App;
