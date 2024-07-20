@@ -1,0 +1,48 @@
+#add-msg-form {
+    display: flex;
+    flex-direction: column;
+    min-height: 50%;
+    width: 50%;
+    min-width: 235px;
+    max-width: 300px;
+    justify-content: space-around;
+    margin: auto;
+    border: 2px solid #ffffffc0;
+    padding: 20px 50px;
+    border-radius: 7px;
+    box-shadow: 0 0 20px #646cffb4;
+}
+
+#add-msg-form h1 {
+    margin: 0;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#add-msg-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-msg-form textarea {
+    font-family: sans-serif;
+    resize: vertical;
+    min-height: 50px;
+    max-height: 50vh;
+    margin-bottom: 20px;
+}
+
+#add-msg-form input,
+#add-msg-form textarea {
+    height: 27px;
+    font-size: 18px;
+    padding: 3px 7px;
+}
+
+#add-msg-btn {
+    align-self: center;
+}
