@@ -1,3 +1,4 @@
+import '../styles/NewMessage.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -19,16 +20,21 @@ const NewMessage = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>
-                Username
-                <input type="text" name="username" required />
-            </label>
-            <label>
-                Message
-                <input type="text" name="text" required />
-            </label>
-            <button type="submit">Add message</button>
+        <form onSubmit={handleSubmit} id="add-msg-form">
+            <h1>NEW MESSAGE</h1>
+            <div id="inputs">
+                <label>
+                    Username
+                    <input type="text" name="username" required />
+                </label>
+                <label>
+                    Message
+                    <textarea type="text" name="text" required />
+                </label>
+            </div>
+            <button type="submit" id="add-msg-btn">
+                Add message
+            </button>
         </form>
     );
 };
