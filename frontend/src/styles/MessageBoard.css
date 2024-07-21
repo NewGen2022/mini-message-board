@@ -109,6 +109,11 @@
     font-size: 20px;
 }
 
+#loading {
+    font-size: 34px;
+    font-weight: 600;
+}
+
 @media (max-width: 990px) {
     #main {
         flex-direction: column;
