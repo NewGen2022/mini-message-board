@@ -16,13 +16,14 @@ const MessageBoard = () => {
                 setLoading(false);
             })
             .catch((err) => {
+                alert(`Error with connection: ${err.message}`);
                 console.error(err);
                 setLoading(false);
             });
     }, []);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div id="loading">Loading...</div>;
     }
 
     const handleAddMsg = () => {
