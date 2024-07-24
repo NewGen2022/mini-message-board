@@ -10,7 +10,7 @@ const MONGO_CONN = process.env.MONGO_URL;
 const app = express();
 
 // Enable CORS for all origins
-app.use(cors({ origin: 'https://mini-message-board-frontend.onrender.com/' })); // http://localhost:8877
+app.use(cors({ origin: 'https://mini-message-board-frontend.onrender.com' })); // http://localhost:8877
 
 // Body parser middleware
 app.use(express.json()); // to handle submit raw json
