@@ -10,7 +10,7 @@ const MessageBoard = () => {
 
     useEffect(() => {
         axios
-            .get('http://localhost:1919/')
+            .get('https://mini-message-board-backend.onrender.com/') // http://localhost:1919/
             .then((res) => {
                 setMessages(res.data);
                 setLoading(false);

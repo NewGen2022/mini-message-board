@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const NewMessage = () => {
     const navigate = useNavigate();
-    const API_URL = 'http://localhost:1919/new';
+    const API_URL = 'https://mini-message-board-backend.onrender.com/new'; // http://localhost:1919/new
     const [formData, setFormData] = useState({ username: '', text: '' });
     const [isLoading, setIsLoading] = useState(false);
 
